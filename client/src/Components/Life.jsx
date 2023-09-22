@@ -1,6 +1,7 @@
 import React from 'react'
 import arrow from '../Assets/arrow.png'
 import exclamation from '../Assets/exclamation.png'
+import LifeChart from './LifeChart'
 
 export default function Life() {
   return (
@@ -11,6 +12,7 @@ export default function Life() {
             <img src={arrow} alt="" />
         </div>
         </a> */}
+        <LifeChart/>
         <a href="/lts">
       <div className='py-2 px-4 rounded-xl bg-yellow-500 bottom-0 text-black font-bold flex  justify-between'>
         <div>Immediate Action Required</div>

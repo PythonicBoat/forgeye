@@ -10,5 +10,38 @@
         { "id": 7, "name": "Heat Treatment" },
         { "id": 8, "name": "Quality Control" },
         { "id": 9, "name": "Shipping and Packaging" }
-      ]
+      ],
+    "lifeGraph": [
+        {
+            "id": 1,
+            "life": 5,
+            "number":1
+        },
+        {
+            "id": 2,
+            "life": 10,
+            "number": 8
+        },
+        {
+            "id": 3,
+            "life": 15,
+            "number": 23
+        },
+        {
+            "id": 4,
+            "life": 20,
+            "number":18
+        },
+        {
+            "id": 5,
+            "life": 25,
+            "number": 20
+        },
+        {
+            "id": 6,
+            "life": 30,
+            "number": 13
+        }
+        
+    ]
 }
