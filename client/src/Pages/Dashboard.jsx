@@ -9,10 +9,10 @@ export default function Dashboard() {
   return (
     <div className='grid grid-cols-3 grid-rows-2 gap-3 m-2'>
         <Map/>
-        <Ladle/>
-        <Feed clickable={true} bRadius={true} id={"5"} name="Tapping Station"/>
         <Life/>
+        <Feed clickable={true} bRadius={true} id={"5"} name="Tapping Station"/>
         <Graph/>
+        <Ladle/>
     </div>
   )
 }

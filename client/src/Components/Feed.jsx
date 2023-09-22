@@ -5,9 +5,9 @@ import arrow from '../Assets/arrow.png'
 //show the camera feeds of the deployed cameras
 export default function Feed({clickable, bRadius, id, name, ladleView}) {
   return (
-    <div className={`bg-black col-span-1 row-span-1 relative border-4 border-white ${bRadius?"rounded-xl":""} overflow-hidden text-white`} >
+    <div className={`bg-black col-span-1 row-span-1 relative border-2 border-white ${bRadius?"rounded-xl":""} overflow-hidden text-white`} >
         {clickable && <a href="/camera">
-        <div className='rounded-bl-xl bg-white absolute top-0 right-0 aspect-[1/1] w-1/6 z-50 flex justify-center items-center'>
+        <div className='rounded-bl-xl rounded-tr-xl bg-white absolute top-0 right-0 aspect-[1/1] w-1/6 z-50 flex justify-center items-center'>
             <img src={arrow} alt="" />
         </div>
         </a>}

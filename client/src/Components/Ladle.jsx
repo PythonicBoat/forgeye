@@ -5,11 +5,11 @@ import exclamation from '../Assets/exclamation.png'
 
 export default function Ladle() {
   return (
-    <div className='col-span-1 row-span-1 bg-black text-white flex flex-col justify-between relative rounded-xl border-4 border-white p-3'>
+    <div className='col-span-1 row-span-1 bg-black text-white flex flex-col justify-between relative rounded-xl border-2 border-white p-3'>
 
       <h1 className='font-pixel text-2xl'>Ladle Tracking</h1>
       <a href="/lts">
-      <div className='rounded-bl-xl bg-white absolute top-0 right-0 aspect-[1/1] w-1/6 z-50 flex justify-center items-center'>
+      <div className='rounded-bl-xl rounded-tr-xl bg-white absolute top-0 right-0 aspect-[1/1] w-1/6 z-50 flex justify-center items-center'>
             <img src={arrow} alt="" />
         </div>
         </a>
