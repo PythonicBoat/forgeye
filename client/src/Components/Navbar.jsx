@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <nav className='h-[100vh] w-[250px] bg-black'>
+    <nav className='h-[100vh] w-[250px] bg-black border-r-2 border-slate-800'>
         <div>
             <img src="" alt="forgEye logo" />
         </div>
