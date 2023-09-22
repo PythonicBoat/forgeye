@@ -1,0 +1,14 @@
+
+{
+    "stations": [
+        { "id": 1, "name": "Raw Material Handling" },
+        { "id": 2, "name": "Blast Furnace" },
+        { "id": 3, "name": "Sintering Plant" },
+        { "id": 4, "name": "Steel Melting Shop" },
+        { "id": 5, "name": "Continuous Casting" },
+        { "id": 6, "name": "Rolling Mill" },
+        { "id": 7, "name": "Heat Treatment" },
+        { "id": 8, "name": "Quality Control" },
+        { "id": 9, "name": "Shipping and Packaging" }
+      ]
+}
