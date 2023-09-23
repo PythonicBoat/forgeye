@@ -13,6 +13,7 @@ import Redspot from './Pages/Redspot';
 import Camera from './Pages/Camera';
 import Logs from './Pages/Logs';
 import Alerts from './Pages/Alerts';
+import Rhombo from './Pages/Rhombo';
 import Api from './Pages/Api';
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
           <Route path='/camera' element={<Camera/>}/>
           <Route path='/logs' element={<Logs/>}/>
           <Route path='/alerts' element={<Alerts/>}/>
+          <Route path='/rhombo' elements={<Rhombo/>}/>
           <Route path='/api' element={<Api/>}/>
         </Routes>
       </Router>
