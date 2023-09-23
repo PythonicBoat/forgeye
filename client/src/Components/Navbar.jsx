@@ -23,7 +23,7 @@ export default function Navbar() {
                 <a href="/logs">Logs</a>
             </li>
             <li className='m-1 p-2'>
-                <a href="/alerts">Alerts</a>
+                <a href="/rhombo">Rhomboidity</a>
             </li>
             <li className='m-1 p-2'>
                 <a href="/api">APIs</a>
