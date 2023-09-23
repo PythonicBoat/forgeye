@@ -17,7 +17,7 @@ import Api from './Pages/Api';
 
 export default function App() {
   return (
-    <div className='bg-white flex h-[100vh] w-[100vw]'>
+    <div className='bg-black flex h-[100vh] w-[100vw]'>
       <Router>
         <Navbar/>
         <Routes>
