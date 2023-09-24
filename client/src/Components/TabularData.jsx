@@ -4,7 +4,7 @@ import data from './data.json'; // Assuming your JSON file is named data.json
 function TabularData() {
   return (
     <div className="tabular-data">
-      <h1>LTS</h1>
+      <h1>Ladle Tracking System</h1>
       <table>
         <thead>
           <tr>

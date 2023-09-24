@@ -1,7 +1,12 @@
 import React from 'react'
+import rhomboid from '../Components/Rhomboid'
 
 export default function Rhombo() {
   return (
-    <div>Rhombo</div>
+    <div>
+      Rhombo
+      <Rhomboid /> 
+    </div>
+    
   )
 }

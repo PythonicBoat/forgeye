@@ -1,25 +1,112 @@
 [
-    {
-      "id": 1,
-      "ldl": "ldl",
-      "currentLocation": "currentLocation",
-      "life": "life",
-      "clrTime": "clrTime",
-      "condition": "condition",
-      "time": "time",
-      "type": "type",
-      "status": "status"
-    },
-    {
-      "id": 2,
-      "ldl": "ldl",
-      "currentLocation": "currentLocation",
-      "life": "life",
-      "clrTime": "clrTime",
-      "condition": "condition",
-      "time": "time",
-      "type": "type",
-      "status": "status"
-    }
-  ]
-    
+  {
+    "id": "1",
+    "ldl": "1",
+    "currentLocation": "A1BT LF1 EWT",
+    "life": "23",
+    "clrTime": "4:30",
+    "condition": "filled",
+    "time": "4:30",
+    "type": "Running",
+    "status": "Under circulation"
+  },
+  {
+    "id": "2",
+    "ldl": "2",
+    "currentLocation": "B2CT MF2 FWT",
+    "life": "22",
+    "clrTime": "4:45",
+    "condition": "new",
+    "time": "4:45",
+    "type": "Waiting",
+    "status": "In queue"
+  },
+  {
+    "id": "3",
+    "ldl": "3",
+    "currentLocation": "C3DT NF3 GWT",
+    "life": "21",
+    "clrTime": "5:00",
+    "condition": "inProgress",
+    "time": "5:00",
+    "type": "In progress",
+    "status": "Under circulation"
+  },
+  {
+    "id": "4",
+    "ldl": "4",
+    "currentLocation": "D4ET OF4 HWT",
+    "life": "20",
+    "clrTime": "5:15",
+    "condition": "completed",
+    "time": "5:15",
+    "type": "Completed",
+    "status": "Delivered"
+  },
+  {
+    "id": "5",
+    "ldl": "5",
+    "currentLocation": "E5FT PF5 IWT",
+    "life": "19",
+    "clrTime": "5:30",
+    "condition": "cancelled",
+    "time": "5:30",
+    "type": "Cancelled",
+    "status": "Cancelled"
+  },
+  {
+    "id": "6",
+    "ldl": "6",
+    "currentLocation": "F6GT QF6 JWT",
+    "life": "18",
+    "clrTime": "5:45",
+    "condition": "filled",
+    "time": "5:45",
+    "type": "Running",
+    "status": "Under circulation"
+  },
+  {
+    "id": "7",
+    "ldl": "7",
+    "currentLocation": "G7HT RF7 KWT",
+    "life": "17",
+    "clrTime": "6:00",
+    "condition": "new",
+    "time": "6:00",
+    "type": "Waiting",
+    "status": "In queue"
+  },
+  {
+    "id": "8",
+    "ldl": "8",
+    "currentLocation": "H8IT SF8 LWT",
+    "life": "16",
+    "clrTime": "6:15",
+    "condition": "inProgress",
+    "time": "6:15",
+    "type": "In progress",
+    "status": "Under circulation"
+  },
+  {
+    "id": "9",
+    "ldl": "9",
+    "currentLocation": "I9JT TF9 MWT",
+    "life": "15",
+    "clrTime": "6:30",
+    "condition": "completed",
+    "time": "6:30",
+    "type": "Completed",
+    "status": "Delivered"
+  },
+  {
+    "id": "10",
+    "ldl": "10",
+    "currentLocation": "J10KT UF10 NWT",
+    "life": "14",
+    "clrTime": "6:45",
+    "condition": "cancelled",
+    "time": "6:45",
+    "type": "Cancelled",
+    "status": "Cancelled"
+  }
+]
