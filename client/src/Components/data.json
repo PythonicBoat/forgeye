@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "ldl": "ldl",
+      "currentLocation": "currentLocation",
+      "life": "life",
+      "clrTime": "clrTime",
+      "condition": "condition",
+      "time": "time",
+      "type": "type",
+      "status": "status"
+    },
+    {
+      "id": 2,
+      "ldl": "ldl",
+      "currentLocation": "currentLocation",
+      "life": "life",
+      "clrTime": "clrTime",
+      "condition": "condition",
+      "time": "time",
+      "type": "type",
+      "status": "status"
+    }
+  ]
+    

@@ -4,7 +4,6 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Map from './Components/Map'
 import Navbar from './Components/Navbar';
 
 import Dashboard from './Pages/Dashboard';
