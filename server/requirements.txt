@@ -78,7 +78,7 @@ types-Pillow==10.0.0.1
 typing_extensions==4.5.0
 tzdata==2023.3
 updog==1.4
-urllib3==1.26.14
+urllib3==1.26.18
 urllib3-secure-extra==0.1.0
 uvicorn==0.21.1
 virtualenv==20.24.5
