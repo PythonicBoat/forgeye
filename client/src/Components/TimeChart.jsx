@@ -1,34 +1,65 @@
-import React, {useState} from 'react'
-import {Bar} from "react-chartjs-2"
-import { Chart as ChartJs} from 'chart.js/auto'
-import DataObject from '../Assets/Data.json'
+import React from 'react';
+import { Bar } from "react-chartjs-2";
+import 'chart.js/auto';
+import { useSimulation } from '../context/SimulationContext';
 
 export default function TimeChart() {
-    const chartOptions = {
-        plugins: {
-          legend: {
-            display: false, 
-          },
+  const { ladles } = useSimulation();
+
+  const labels = ladles.map(l => l.ladleId.replace('LAD-', 'L-'));
+  const dataValues = ladles.map(l => l.timeInState || 0);
+
+  const chartOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+    scales: {
+      x: {
+        grid: {
+          display: false
         },
-      };
-      console.log(DataObject.timeGraph);
-    const [timeData, setTimeData] = useState({
-        labels: DataObject.timeGraph.map((data)=> data.id),
-        datasets: [{
-            data: DataObject.timeGraph.map((data)=> data.time),
-            fill: true,
-            backgroundColor: "white",
-        }],
-        options: {        
-            legend: {
-              display: false
-            }
+        ticks: {
+          color: '#94a3b8',
+          font: {
+            family: 'monospace',
+            size: 9
           }
-        
-    })
+        }
+      },
+      y: {
+        min: 0,
+        grid: {
+          color: 'rgba(255, 255, 255, 0.05)'
+        },
+        ticks: {
+          color: '#94a3b8',
+          font: {
+            family: 'monospace',
+            size: 9
+          }
+        }
+      }
+    }
+  };
+
+  const timeData = {
+    labels: labels,
+    datasets: [{
+      data: dataValues,
+      backgroundColor: "white",
+      borderColor: "white",
+      borderWidth: 1,
+      barThickness: 12
+    }]
+  };
+
   return (
-    <div>
-        <Bar data={timeData} options={chartOptions}/>
+    <div className="w-full h-[120px]">
+      <Bar data={timeData} options={chartOptions} />
     </div>
-  )
+  );
 }

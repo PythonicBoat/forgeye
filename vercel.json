@@ -1,27 +1,32 @@
 {
-  "version": 2,
-  "builds": [
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd client && npm install",
+  "buildCommand": "cd client && npm run build",
+  "outputDirectory": "client/build",
+  "functions": {
+    "api/index.py": {
+      "includeFiles": "client/build/**"
+    }
+  },
+  "rewrites": [
     {
-      "src": "server",
-      "use": "@vercel/node",
-      "config": {
-        "devCommand": "python -m flask run",
-        "outputDirectory": "/"
-      }
+      "source": "/api/:path*",
+      "destination": "/api/index.py"
     },
     {
-      "src": "client",
-      "use": "@vercel/static"
+      "source": "/:path*",
+      "destination": "/index.html"
     }
   ],
-  "routes": [
+  "headers": [
     {
-      "src": "/api/(.*)",
-      "dest": "server/:1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "client/:1"
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "no-referrer" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
     }
   ]
 }

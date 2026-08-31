@@ -3,3 +3,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 17px;
+    background: #000;
+  }
+
+  body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    border-radius: 0 !important;
+  }
+
+  button {
+    border-color: #737373 !important;
+  }
+}
+
+@layer utilities {
+  .rounded,
+  .rounded-lg,
+  .rounded-xl,
+  .rounded-2xl,
+  .rounded-full {
+    border-radius: 0 !important;
+  }
+
+  .text-yellow-400,
+  .text-yellow-500,
+  .text-amber-400,
+  .text-amber-500,
+  .text-red-400,
+  .text-red-500,
+  .text-emerald-500 {
+    color: #fff !important;
+  }
+
+  .bg-yellow-500,
+  .bg-amber-500,
+  .bg-red-600 {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+}
